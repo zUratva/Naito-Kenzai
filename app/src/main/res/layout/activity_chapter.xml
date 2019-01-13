@@ -7,7 +7,7 @@
 
     <include layout="@layout/empty"/>
 
-    <com.jparkie.aizoban.views.widgets.GestureViewPager
+    <com.aizoban.naitokenzai.views.widgets.GestureViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/viewPager"/>

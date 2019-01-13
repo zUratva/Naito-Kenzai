@@ -8,12 +8,12 @@
         <option name="gradleHome" value="C:\Users\Jacob Park\Android Studio\gradle\gradle-2.2.1" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="/media/xoxo/Linux Safe/My Projects/aizoban_upgrade/Naito-Kenzai" />
+            <option value="/media/xoxo/Linux Safe/My Projects/aizoban_upgrade/Naito-Kenzai/app" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
 </project>
-
