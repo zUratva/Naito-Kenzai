@@ -6,10 +6,6 @@
         android:key="@string/preference_category_general_key"
         android:title="@string/preference_category_general_title">
         <Preference
-            android:key="@string/preference_view_google_play_key"
-            android:title="@string/preference_view_google_play_title"
-            android:summary="@string/preference_view_google_play_summary"/>
-        <Preference
             android:key="@string/preference_view_disclaimer_key"
             android:title="@string/preference_view_disclaimer_title"
             android:summary="@string/preference_view_disclaimer_summary"/>

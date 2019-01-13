@@ -1,3 +1,10 @@
+/*
+Last Updated : 13 Jan 2019
+
+Changes:
+    A. Removed google play store link from Settings menu
+*/
+
 package com.aizoban.naitokenzai.presenters;
 
 import android.content.Intent;
@@ -31,10 +38,12 @@ public class SettingsPresenterImpl implements SettingsPresenter {
 
     @Override
     public boolean onPreferenceClick(Preference preference) {
-        if (preference.getKey().equals(mSettingsView.getContext().getString(R.string.preference_view_google_play_key))) {
-            viewGooglePlayListing();
-            return true;
-        } else if (preference.getKey().equals(mSettingsView.getContext().getString(R.string.preference_view_disclaimer_key))) {
+        // Commented on 13 Jan 2019 to removed google play-store link from "Settings" menu
+        //if (preference.getKey().equals(mSettingsView.getContext().getString(R.string.preference_view_google_play_key))) {
+        //    viewGooglePlayListing();
+        //    return true;
+        //} else
+        if (preference.getKey().equals(mSettingsView.getContext().getString(R.string.preference_view_disclaimer_key))) {
             displayDisclaimer();
             return true;
         } else if (preference.getKey().equals(mSettingsView.getContext().getString(R.string.preference_clear_favourite_key))) {
