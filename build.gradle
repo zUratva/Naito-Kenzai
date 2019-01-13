@@ -1,3 +1,9 @@
+/*
+Last Modified : 13 Jan 2019
+Changes: Sdk Version 28 Compatibility updates
+    1. Added google() repositories
+    2. updated classpath to version 3.2.1 from 1.0.0
+*/
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
