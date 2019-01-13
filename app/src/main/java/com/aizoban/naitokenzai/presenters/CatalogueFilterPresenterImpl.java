@@ -3,7 +3,7 @@ package com.aizoban.naitokenzai.presenters;
 import android.os.Bundle;
 import android.os.Parcelable;
 
-import com.aizoban.naitokenzai.controllers.AizobanManager;
+import com.aizoban.naitokenzai.controllers.NaitoKenzaiManager;
 import com.aizoban.naitokenzai.controllers.events.SearchCatalogueWrapperSubmitEvent;
 import com.aizoban.naitokenzai.controllers.factories.DefaultFactory;
 import com.aizoban.naitokenzai.presenters.mapper.CatalogueFilterMapper;
@@ -47,7 +47,7 @@ public class CatalogueFilterPresenterImpl implements CatalogueFilterPresenter {
     @Override
     public void initializeDataFromPreferenceSource() {
         if (mSearchCatalogueWrapper != null) {
-            List<String> availableGenres = AizobanManager.getGenresFromPreferenceSource()
+            List<String> availableGenres = NaitoKenzaiManager.getGenresFromPreferenceSource()
                     .toBlocking()
                     .single();
 

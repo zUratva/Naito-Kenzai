@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.aizoban.naitokenzai.AizobanApplication;
+import com.aizoban.naitokenzai.NaitoKenzaiApplication;
 import com.aizoban.naitokenzai.models.Chapter;
 import com.aizoban.naitokenzai.models.databases.FavouriteManga;
 import com.aizoban.naitokenzai.models.databases.RecentChapter;
@@ -24,7 +24,7 @@ public class ApplicationSQLiteOpenHelper extends SQLiteOpenHelper {
 
     public static synchronized ApplicationSQLiteOpenHelper getInstance() {
         if (sInstance == null) {
-            sInstance = new ApplicationSQLiteOpenHelper(AizobanApplication.getInstance());
+            sInstance = new ApplicationSQLiteOpenHelper(NaitoKenzaiApplication.getInstance());
         }
 
         return sInstance;

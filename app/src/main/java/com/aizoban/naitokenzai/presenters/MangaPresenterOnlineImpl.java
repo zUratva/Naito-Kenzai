@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentActivity;
 import android.util.Pair;
 
 import com.aizoban.naitokenzai.BuildConfig;
-import com.aizoban.naitokenzai.controllers.AizobanManager;
+import com.aizoban.naitokenzai.controllers.NaitoKenzaiManager;
 import com.aizoban.naitokenzai.controllers.QueryManager;
 import com.aizoban.naitokenzai.controllers.factories.DefaultFactory;
 import com.aizoban.naitokenzai.models.Chapter;
@@ -404,9 +404,9 @@ public class MangaPresenterOnlineImpl implements MangaPresenter {
         if (mRequest != null) {
             mMangaView.showRefreshing();
 
-            Observable<Manga> updateMangaFromUrl = AizobanManager
+            Observable<Manga> updateMangaFromUrl = NaitoKenzaiManager
                     .pullMangaFromNetwork(mRequest);
-            Observable<List<Chapter>> updateChaptersFromUrl = AizobanManager
+            Observable<List<Chapter>> updateChaptersFromUrl = NaitoKenzaiManager
                     .pullChaptersFromNetwork(mRequest)
                     .onErrorReturn(new Func1<Throwable, List<Chapter>>() {
                         @Override

@@ -14,7 +14,7 @@ import com.aizoban.naitokenzai.models.downloads.DownloadPage;
 
 import static nl.qbusict.cupboard.CupboardFactory.cupboard;
 
-public class AizobanApplication extends Application {
+public class NaitoKenzaiApplication extends Application {
     static {
         cupboard().register(Manga.class);
         cupboard().register(Chapter.class);
@@ -26,13 +26,13 @@ public class AizobanApplication extends Application {
 
     }
 
-    private static AizobanApplication sInstance;
+    private static NaitoKenzaiApplication sInstance;
 
-    public AizobanApplication() {
+    public NaitoKenzaiApplication() {
         sInstance = this;
     }
 
-    public static synchronized AizobanApplication getInstance() {
+    public static synchronized NaitoKenzaiApplication getInstance() {
         return sInstance;
     }
 

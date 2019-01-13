@@ -71,7 +71,7 @@ public class QueryManager {
                     String orderBy = null;
 
                     selection.append(LibraryContract.Manga.COLUMN_SOURCE + " = ?");
-                    selectionArgs.add(AizobanManager.getNameFromPreferenceSource().toBlocking().single());
+                    selectionArgs.add(NaitoKenzaiManager.getNameFromPreferenceSource().toBlocking().single());
                     selection.append(" AND ").append(LibraryContract.Manga.COLUMN_NAME + " != ?");
                     selectionArgs.add(String.valueOf(DefaultFactory.Manga.DEFAULT_NAME));
                     selection.append(" AND ").append(LibraryContract.Manga.COLUMN_RANK + " != ?");
@@ -121,7 +121,7 @@ public class QueryManager {
                     List<String> selectionArgs = new ArrayList<String>();
 
                     selection.append(LibraryContract.Manga.COLUMN_SOURCE + " = ?");
-                    selectionArgs.add(AizobanManager.getNameFromPreferenceSource().toBlocking().single());
+                    selectionArgs.add(NaitoKenzaiManager.getNameFromPreferenceSource().toBlocking().single());
                     selection.append(" AND ").append(LibraryContract.Manga.COLUMN_UPDATED + " != ?");
                     selectionArgs.add(String.valueOf(DefaultFactory.Manga.DEFAULT_UPDATED));
 
@@ -150,7 +150,7 @@ public class QueryManager {
                     List<String> selectionArgs = new ArrayList<String>();
 
                     selection.append(LibraryContract.Manga.COLUMN_SOURCE + " = ?");
-                    selectionArgs.add(AizobanManager.getNameFromPreferenceSource().toBlocking().single());
+                    selectionArgs.add(NaitoKenzaiManager.getNameFromPreferenceSource().toBlocking().single());
                     selection.append(" AND ").append(LibraryContract.Manga.COLUMN_THUMBNAIL_URL + " != ?");
                     selectionArgs.add(String.valueOf(DefaultFactory.Manga.DEFAULT_THUMBNAIL_URL));
 

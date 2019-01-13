@@ -1,7 +1,7 @@
 package com.aizoban.naitokenzai.controllers.caches;
 
 import com.jakewharton.disklrucache.DiskLruCache;
-import com.aizoban.naitokenzai.AizobanApplication;
+import com.aizoban.naitokenzai.NaitoKenzaiApplication;
 import com.aizoban.naitokenzai.utils.DiskUtils;
 
 import java.io.BufferedOutputStream;
@@ -23,7 +23,7 @@ public class CacheProvider {
     private CacheProvider() {
         try {
             mDiskCache = DiskLruCache.open(
-                    new File(AizobanApplication.getInstance().getCacheDir(), PARAMETER_CACHE_DIRECTORY),
+                    new File(NaitoKenzaiApplication.getInstance().getCacheDir(), PARAMETER_CACHE_DIRECTORY),
                     PARAMETER_APP_VERSION,
                     PARAMETER_VALUE_COUNT,
                     PARAMETER_CACHE_SIZE

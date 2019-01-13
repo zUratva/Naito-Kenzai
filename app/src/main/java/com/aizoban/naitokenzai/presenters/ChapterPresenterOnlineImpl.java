@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentManager;
 
 import com.bumptech.glide.Glide;
 import com.aizoban.naitokenzai.BuildConfig;
-import com.aizoban.naitokenzai.controllers.AizobanManager;
+import com.aizoban.naitokenzai.controllers.NaitoKenzaiManager;
 import com.aizoban.naitokenzai.controllers.QueryManager;
 import com.aizoban.naitokenzai.controllers.factories.DefaultFactory;
 import com.aizoban.naitokenzai.models.Chapter;
@@ -430,7 +430,7 @@ public class ChapterPresenterOnlineImpl implements ChapterPresenter {
         if (mRequest != null) {
             mImageUrls = new ArrayList<String>();
 
-            mDownloadImageUrlsSubscription = AizobanManager
+            mDownloadImageUrlsSubscription = NaitoKenzaiManager
                     .pullImageUrlsFromNetwork(mRequest)
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
@@ -482,7 +482,7 @@ public class ChapterPresenterOnlineImpl implements ChapterPresenter {
                 int displayWidth = mChapterView.getDisplayWidth();
                 int displayHeight = mChapterView.getDisplayHeight();
 
-                mDownloadImageUrlsSubscription = AizobanManager
+                mDownloadImageUrlsSubscription = NaitoKenzaiManager
                         .cacheFromImagesOfSize(mImageUrls, displayWidth, displayHeight)
                         .subscribe(new Observer<File>() {
                             @Override

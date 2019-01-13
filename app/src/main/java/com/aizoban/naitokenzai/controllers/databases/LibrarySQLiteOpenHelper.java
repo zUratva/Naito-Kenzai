@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.aizoban.naitokenzai.AizobanApplication;
+import com.aizoban.naitokenzai.NaitoKenzaiApplication;
 import com.aizoban.naitokenzai.models.Manga;
 
 import java.io.File;
@@ -27,7 +27,7 @@ public class LibrarySQLiteOpenHelper extends SQLiteOpenHelper {
 
     public static synchronized LibrarySQLiteOpenHelper getInstance() {
         if (sInstance == null) {
-            sInstance = new LibrarySQLiteOpenHelper(AizobanApplication.getInstance());
+            sInstance = new LibrarySQLiteOpenHelper(NaitoKenzaiApplication.getInstance());
         }
 
         return sInstance;
@@ -52,7 +52,7 @@ public class LibrarySQLiteOpenHelper extends SQLiteOpenHelper {
     }
 
     private void initializeLibraryDatabase() {
-        final File libraryDatabasePath = AizobanApplication.getInstance().getDatabasePath(LibraryContract.DATABASE_NAME);
+        final File libraryDatabasePath = NaitoKenzaiApplication.getInstance().getDatabasePath(LibraryContract.DATABASE_NAME);
         if (libraryDatabasePath.exists()){
             SQLiteDatabase libraryDatabase = SQLiteDatabase.openDatabase(libraryDatabasePath.getPath(), null, 0);
 
@@ -68,11 +68,11 @@ public class LibrarySQLiteOpenHelper extends SQLiteOpenHelper {
 
         final File parentPath = libraryDatabasePath.getParentFile();
         if (parentPath.exists()) {
-            String[] databaseList = AizobanApplication.getInstance().databaseList();
+            String[] databaseList = NaitoKenzaiApplication.getInstance().databaseList();
 
             for (String databaseName : databaseList) {
                 if (!databaseName.contains(ApplicationContract.DATABASE_NAME)) {
-                    AizobanApplication.getInstance().deleteDatabase(databaseName);
+                    NaitoKenzaiApplication.getInstance().deleteDatabase(databaseName);
                 }
             }
         } else {
@@ -84,7 +84,7 @@ public class LibrarySQLiteOpenHelper extends SQLiteOpenHelper {
             OutputStream outputStream = null;
 
             try {
-                inputStream = AizobanApplication.getInstance().getAssets().open(LibraryContract.DATABASE_NAME);
+                inputStream = NaitoKenzaiApplication.getInstance().getAssets().open(LibraryContract.DATABASE_NAME);
                 outputStream = new FileOutputStream(libraryDatabasePath);
 
                 byte[] fileBuffer = new byte[8192];

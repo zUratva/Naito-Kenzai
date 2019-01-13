@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Parcelable;
 
 import com.aizoban.naitokenzai.BuildConfig;
-import com.aizoban.naitokenzai.controllers.AizobanManager;
+import com.aizoban.naitokenzai.controllers.NaitoKenzaiManager;
 import com.aizoban.naitokenzai.controllers.QueryManager;
 import com.aizoban.naitokenzai.controllers.factories.DefaultFactory;
 import com.aizoban.naitokenzai.controllers.sources.UpdatePageMarker;
@@ -222,7 +222,7 @@ public class LatestMangaPresenterImpl implements LatestMangaPresenter {
 
         mLatestMangaView.showRefreshing();
 
-        mUpdateLibrarySubscription = AizobanManager
+        mUpdateLibrarySubscription = NaitoKenzaiManager
                 .pullLatestUpdatesFromNetwork(mCurrentUpdatePageMarker)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

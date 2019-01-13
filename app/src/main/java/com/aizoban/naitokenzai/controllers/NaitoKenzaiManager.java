@@ -5,7 +5,7 @@ import android.database.Cursor;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.FutureTarget;
-import com.aizoban.naitokenzai.AizobanApplication;
+import com.aizoban.naitokenzai.NaitoKenzaiApplication;
 import com.aizoban.naitokenzai.controllers.caches.CacheProvider;
 import com.aizoban.naitokenzai.controllers.databases.ApplicationContract;
 import com.aizoban.naitokenzai.controllers.events.DownloadChapterUpdateEvent;
@@ -35,7 +35,7 @@ import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
-public class AizobanManager {
+public class NaitoKenzaiManager {
     public static Observable<String> getNameFromPreferenceSource() {
         return SourceFactory.constructSourceFromPreferences().getName();
     }
@@ -65,7 +65,7 @@ public class AizobanManager {
     }
 
     public static Observable<String> pullImageUrlsFromNetwork(final RequestWrapper request) {
-        return AizobanManager.getImageUrlsFromDiskCache(request.getUrl())
+        return NaitoKenzaiManager.getImageUrlsFromDiskCache(request.getUrl())
                 .onBackpressureBuffer()
                 .onErrorResumeNext(new Func1<Throwable, Observable<? extends String>>() {
                     @Override
@@ -91,7 +91,7 @@ public class AizobanManager {
                 .onErrorResumeNext(new Func1<Throwable, Observable<? extends List<DownloadPage>>>() {
                     @Override
                     public Observable<? extends List<DownloadPage>> call(Throwable throwable) {
-                        return AizobanManager
+                        return NaitoKenzaiManager
                                 .pullImageUrlsFromNetwork(downloadRequest)
                                 .subscribeOn(Schedulers.io())
                                 .toList()
@@ -139,7 +139,7 @@ public class AizobanManager {
                                                         String fileType = response.body().contentType().subtype();
                                                         InputStream fileData = response.body().byteStream();
 
-                                                        return AizobanManager.saveInputStreamToDirectory(fileData, fileDirectory, fileName + "." + fileType);
+                                                        return NaitoKenzaiManager.saveInputStreamToDirectory(fileData, fileDirectory, fileName + "." + fileType);
                                                     }
                                                 })
                                                 .doOnCompleted(new Action0() {
@@ -229,7 +229,7 @@ public class AizobanManager {
                 try {
                     for (String imageUrl : imageUrls) {
                         if (!subscriber.isUnsubscribed()) {
-                            FutureTarget<File> cacheFuture = Glide.with(AizobanApplication.getInstance())
+                            FutureTarget<File> cacheFuture = Glide.with(NaitoKenzaiApplication.getInstance())
                                     .load(imageUrl)
                                     .downloadOnly(cacheWidth, cacheHeight);
 
@@ -251,7 +251,7 @@ public class AizobanManager {
                 try {
                     boolean isSuccessful = true;
 
-                    File imageCacheDirectory = Glide.getPhotoCacheDir(AizobanApplication.getInstance());
+                    File imageCacheDirectory = Glide.getPhotoCacheDir(NaitoKenzaiApplication.getInstance());
                     if (imageCacheDirectory.isDirectory()) {
                         for (File cachedFile : imageCacheDirectory.listFiles()) {
                             if (!cachedFile.delete()) {

@@ -1,7 +1,7 @@
 package com.aizoban.naitokenzai.controllers.databases;
 
 public class ApplicationContract {
-    public static final String DATABASE_NAME = "AizobanApplication.db";
+    public static final String DATABASE_NAME = "NaitoKenzaiApplication.db";
     public static final int DATABASE_VERSION = 1;
 
     public static final class Chapter {

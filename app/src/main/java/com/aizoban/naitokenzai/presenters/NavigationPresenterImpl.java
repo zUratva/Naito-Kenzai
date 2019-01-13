@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.aizoban.naitokenzai.BuildConfig;
 import com.aizoban.naitokenzai.R;
-import com.aizoban.naitokenzai.controllers.AizobanManager;
+import com.aizoban.naitokenzai.controllers.NaitoKenzaiManager;
 import com.aizoban.naitokenzai.controllers.QueryManager;
 import com.aizoban.naitokenzai.controllers.events.NavigationItemSelectEvent;
 import com.aizoban.naitokenzai.models.Manga;
@@ -59,7 +59,7 @@ public class NavigationPresenterImpl implements NavigationPresenter {
     @Override
     public void initializeViews() {
         mNavigationView.initializeListView();
-        mNavigationView.initializeSourceTextView(AizobanManager.getNameFromPreferenceSource().toBlocking().single());
+        mNavigationView.initializeSourceTextView(NaitoKenzaiManager.getNameFromPreferenceSource().toBlocking().single());
 
         initializeThumbnailImageView();
     }
@@ -108,7 +108,7 @@ public class NavigationPresenterImpl implements NavigationPresenter {
     public void onNavigationItemClick(int position) {
         if (position != mCurrentPosition) {
             if (mCurrentPosition == NavigationUtils.POSITION_SETTINGS && position != NavigationUtils.POSITION_SETTINGS) {
-                mNavigationView.initializeSourceTextView(AizobanManager.getNameFromPreferenceSource().toBlocking().single());
+                mNavigationView.initializeSourceTextView(NaitoKenzaiManager.getNameFromPreferenceSource().toBlocking().single());
             }
             if (position != NavigationUtils.POSITION_EXPLORE) {
                 mCurrentPosition = position;

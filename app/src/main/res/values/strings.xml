@@ -1,10 +1,10 @@
 <resources>
     <!-- Application Names: -->
-    <string name="app_name">Aizōban</string>
-    <string name="service_name">Aizōban Downloader</string>
+    <string name="app_name">Naito Kenzai</string>
+    <string name="service_name">Naito Kenzai Downloader</string>
 
     <!-- Notifications: -->
-    <string name="notification_download_title">Aizōban Downloader</string>
+    <string name="notification_download_title">Naito Kenzai Downloader</string>
     <string name="notification_download_text">Downloading...</string>
 
     <!-- Fragment Names: -->
@@ -92,7 +92,7 @@
     <!-- Disclaimer Dialog Items: -->
     <string name="disclaimer_dialog_button">Understood</string>
     <string name="disclaimer_text_one">Copyrights and trademarks for the manga, and other promotional materials are held by their respective owners and their use is allowed under the fair use clause of the Copyright Law.</string>
-    <string name="disclaimer_text_two">Aizōban is developed by an individual who does not have any affiliation with the content providers. This individual reserves the right to change the sources of manga without prior notice.</string>
+    <string name="disclaimer_text_two">Both Aizōban and its fork Naito Kenzai are developed by an individual who does not have any affiliation with the content providers. This individual reserves the right to change the sources of manga without prior notice.</string>
     <string name="disclaimer_text_three">Please support the authors by purchasing the volumes from official avenues when they are available in your locale.</string>
 
     <!-- Manga Header Items: -->
@@ -119,7 +119,7 @@
     <!-- Chapter Items: -->
     <string name="chapter_subtitle_progress">Image Urls Fetched:</string>
     <string name="chapter_subtitle_page">Page:</string>
-    
+
     <!-- Chapter Help Dialog Items: -->
     <string name="chapter_help_dialog_text">
         <ul><li><b>Toolbar Title</b>: Tap the toolbar title to view the full title of the chapter.</li>\n

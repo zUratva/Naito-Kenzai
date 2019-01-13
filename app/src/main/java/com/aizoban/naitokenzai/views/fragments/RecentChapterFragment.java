@@ -25,7 +25,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.aizoban.naitokenzai.AizobanApplication;
+import com.aizoban.naitokenzai.NaitoKenzaiApplication;
 import com.aizoban.naitokenzai.R;
 import com.aizoban.naitokenzai.presenters.RecentChapterPresenter;
 import com.aizoban.naitokenzai.presenters.RecentChapterPresenterImpl;
@@ -115,7 +115,7 @@ public class RecentChapterFragment extends Fragment implements RecentChapterView
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String newText) {
-                InputMethodManager searchKeyboard = (InputMethodManager) AizobanApplication.getInstance().getSystemService(Context.INPUT_METHOD_SERVICE);
+                InputMethodManager searchKeyboard = (InputMethodManager) NaitoKenzaiApplication.getInstance().getSystemService(Context.INPUT_METHOD_SERVICE);
                 searchKeyboard.hideSoftInputFromWindow(searchView.getWindowToken(), 0);
 
                 return true;

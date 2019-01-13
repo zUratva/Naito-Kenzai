@@ -6,7 +6,7 @@ import android.preference.Preference;
 import android.support.v4.app.FragmentActivity;
 
 import com.aizoban.naitokenzai.R;
-import com.aizoban.naitokenzai.controllers.AizobanManager;
+import com.aizoban.naitokenzai.controllers.NaitoKenzaiManager;
 import com.aizoban.naitokenzai.controllers.QueryManager;
 import com.aizoban.naitokenzai.views.SettingsView;
 import com.aizoban.naitokenzai.views.fragments.DisclaimerFragment;
@@ -103,7 +103,7 @@ public class SettingsPresenterImpl implements SettingsPresenter {
     }
 
     private void clearImageCache() {
-        AizobanManager
+        NaitoKenzaiManager
                 .clearImageCache()
                 .onErrorReturn(new Func1<Throwable, Boolean>() {
                     @Override

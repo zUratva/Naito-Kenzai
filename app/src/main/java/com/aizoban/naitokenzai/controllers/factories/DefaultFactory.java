@@ -1,6 +1,6 @@
 package com.aizoban.naitokenzai.controllers.factories;
 
-import com.aizoban.naitokenzai.controllers.AizobanManager;
+import com.aizoban.naitokenzai.controllers.NaitoKenzaiManager;
 import com.aizoban.naitokenzai.utils.DownloadUtils;
 import com.aizoban.naitokenzai.utils.SearchUtils;
 
@@ -257,7 +257,7 @@ public class DefaultFactory {
         private UpdatePageMarker() {}
 
         public static com.aizoban.naitokenzai.controllers.sources.UpdatePageMarker constructDefault() {
-            return new com.aizoban.naitokenzai.controllers.sources.UpdatePageMarker(AizobanManager.getInitialUpdateUrlFromPreferenceSource().toBlocking().single(), DEFAULT_LAST_MANGA_POSITION);
+            return new com.aizoban.naitokenzai.controllers.sources.UpdatePageMarker(NaitoKenzaiManager.getInitialUpdateUrlFromPreferenceSource().toBlocking().single(), DEFAULT_LAST_MANGA_POSITION);
         }
     }
 }

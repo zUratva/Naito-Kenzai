@@ -24,7 +24,7 @@
     <string name="preference_view_google_play_summary">Please rate Aizōban on Google Play or email the developer</string>
     <string name="preference_view_disclaimer_key">preference_view_disclaimer</string>
     <string name="preference_view_disclaimer_title">View Disclaimer</string>
-    <string name="preference_view_disclaimer_summary">Please open and read this disclaimer for Aizōban</string>
+    <string name="preference_view_disclaimer_summary">Please open and read this disclaimer for Naito Kenzai</string>
 
     <!-- Catalogue: -->
     <string name="preference_source_key">preference_source</string>

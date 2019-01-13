@@ -17,7 +17,7 @@ import android.support.v4.app.TaskStackBuilder;
 
 import com.aizoban.naitokenzai.BuildConfig;
 import com.aizoban.naitokenzai.R;
-import com.aizoban.naitokenzai.controllers.AizobanManager;
+import com.aizoban.naitokenzai.controllers.NaitoKenzaiManager;
 import com.aizoban.naitokenzai.controllers.QueryManager;
 import com.aizoban.naitokenzai.controllers.databases.ApplicationSQLiteOpenHelper;
 import com.aizoban.naitokenzai.controllers.events.DownloadChapterUpdateEvent;
@@ -217,7 +217,7 @@ public class DownloadService extends Service implements Observer<File> {
     private void startDownloadToSubscriptionMap(final DownloadChapter downloadChapter) {
         final String hashKey = DiskUtils.hashKeyForDisk(downloadChapter.getUrl());
 
-        Subscription newSubscription = AizobanManager.downloadChapterFromNetwork(downloadChapter)
+        Subscription newSubscription = NaitoKenzaiManager.downloadChapterFromNetwork(downloadChapter)
                 .finallyDo(new Action0() {
                     @Override
                     public void call() {
