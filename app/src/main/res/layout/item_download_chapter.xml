@@ -10,16 +10,16 @@
     android:background="@drawable/item_background">
 
     <TextView
+        android:id="@+id/nameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
         android:ellipsize="middle"
         android:singleLine="true"
         android:textColor="@color/primaryBlue500"
         android:textSize="@dimen/typography_subhead"
-        android:textStyle="bold"
-        android:id="@+id/nameTextView"/>
+        android:textStyle="bold" />
 
 </RelativeLayout>
