@@ -4,7 +4,7 @@
 
     <!-- Primary: Blue -->
     <color name="primaryBlue100">#D0D9FF</color>
-    <color name="primaryBlue500">#5677FC</color>
+    <color name="primaryBlue500">#5677fc</color>
     <color name="primaryBlue700">#455EDE</color>
 
     <!-- Primary: Grey -->
@@ -19,7 +19,7 @@
 
     <!-- Text, Icon, Divider -->
     <color name="white">#FFFFFF</color>
-    <color name="black">#1e1a1a</color>
+    <color name="black">#241a1a</color>
     <color name="primaryText">#212121</color>
     <color name="secondaryText">#727272</color>
     <color name="hintText">#B8B8B8</color>
@@ -29,5 +29,6 @@
     <!-- Backgrounds. -->
     <color name="primaryBackground">#FAFAFA</color>
     <color name="secondaryBackground">#FFFFFF</color>
+    <color name="Black500">#323030</color>
 
 </resources>

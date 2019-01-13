@@ -190,7 +190,7 @@ public class ChapterActivity extends AppCompatActivity implements ChapterView, C
     public void initializeToolbar() {
         if (mToolbar != null) {
             mToolbar.setTitle(R.string.fragment_chapter);
-            mToolbar.setBackgroundColor(getResources().getColor(R.color.primaryBlue500));
+            mToolbar.setBackgroundColor(getResources().getColor(R.color.Black500));
             mToolbar.setAlpha(0.4f);
             mToolbar.setOnClickListener(new View.OnClickListener() {
                 @Override

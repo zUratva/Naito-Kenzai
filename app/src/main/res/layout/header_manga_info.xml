@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.4"
-                android:background="@color/primaryBlue500"
+                android:background="@color/Black500"
                 android:id="@+id/maskImageView" />
 
         </FrameLayout>
@@ -38,7 +38,7 @@
             android:layout_marginRight="@dimen/baseline_content_unit"
             android:layout_marginEnd="@dimen/baseline_content_unit"
             android:ellipsize="middle"
-            android:textColor="@color/primaryBlue500"
+            android:textColor="@color/Black500"
             android:textSize="@dimen/typography_headline"
             android:textStyle="bold"
             android:id="@+id/nameTextView" />
@@ -63,7 +63,7 @@
             android:layout_marginStart="@dimen/baseline_content_left"
             android:layout_marginRight="@dimen/baseline_content_unit"
             android:layout_marginEnd="@dimen/baseline_content_unit"
-            android:textColor="@color/primaryBlue500"
+            android:textColor="@color/Black500"
             android:textSize="@dimen/typography_subhead"
             android:textStyle="bold"
             android:text="@string/manga_header_title_author"
@@ -89,7 +89,7 @@
             android:layout_marginStart="@dimen/baseline_content_left"
             android:layout_marginRight="@dimen/baseline_content_unit"
             android:layout_marginEnd="@dimen/baseline_content_unit"
-            android:textColor="@color/primaryBlue500"
+            android:textColor="@color/Black500"
             android:textSize="@dimen/typography_subhead"
             android:textStyle="bold"
             android:text="@string/manga_header_title_artist"
@@ -115,7 +115,7 @@
             android:layout_marginStart="@dimen/baseline_content_left"
             android:layout_marginRight="@dimen/baseline_content_unit"
             android:layout_marginEnd="@dimen/baseline_content_unit"
-            android:textColor="@color/primaryBlue500"
+            android:textColor="@color/Black500"
             android:textSize="@dimen/typography_subhead"
             android:textStyle="bold"
             android:text="@string/manga_header_title_genre"
@@ -141,7 +141,7 @@
             android:layout_marginStart="@dimen/baseline_content_left"
             android:layout_marginRight="@dimen/baseline_content_unit"
             android:layout_marginEnd="@dimen/baseline_content_unit"
-            android:textColor="@color/primaryBlue500"
+            android:textColor="@color/Black500"
             android:textSize="@dimen/typography_subhead"
             android:textStyle="bold"
             android:text="@string/manga_header_title_status"
@@ -169,7 +169,7 @@
         android:layout_marginStart="@dimen/manga_header_fab_margin_left"
         android:layout_gravity="top|start"
         android:src="@drawable/ic_favourite_outline_white_24dp"
-        fab:fab_colorNormal="@color/primaryBlue500"
+        fab:fab_colorNormal="@color/Black500"
         fab:fab_colorPressed="@color/accentPinkA200"
         android:id="@+id/favouriteButton" />
 

@@ -23,7 +23,7 @@ public class DownloadChapterListingsAdapter extends BaseCursorAdapter {
 
         mRecentChapterUrls = new ArrayList<>();
 
-        mColor = mContext.getResources().getColor(R.color.primaryBlue500);
+        mColor = mContext.getResources().getColor(R.color.Black500);
     }
 
     @Override

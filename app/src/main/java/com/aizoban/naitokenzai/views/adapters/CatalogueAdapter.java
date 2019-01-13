@@ -67,8 +67,8 @@ public class CatalogueAdapter extends BaseCursorAdapter {
 
         public void renderView(Context context, Manga manga) {
             setName(manga.getName());
-            setMask(context.getResources().getColor(R.color.primaryBlue500));
-            setFooter(context.getResources().getColor(R.color.primaryBlue500));
+            setMask(context.getResources().getColor(R.color.Black500));
+            setFooter(context.getResources().getColor(R.color.Black500));
             setThumbnail(context, manga.getThumbnailUrl(), context.getResources().getColor(R.color.accentPinkA200));
         }
 

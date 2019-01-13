@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/baseline_component_unit"
-        android:textColor="@color/primaryBlue500"
+        android:textColor="@color/Black500"
         android:textSize="@dimen/typography_title"
         android:textStyle="bold"
         android:text="@string/dialog_open_source_licenses" />
@@ -34,7 +34,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_cupboard"/>
@@ -66,7 +66,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_disk_lru_cache"/>
@@ -98,7 +98,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_event_bus"/>
@@ -130,7 +130,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_floating_action_button"/>
@@ -162,7 +162,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_glide"/>
@@ -194,7 +194,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_jsoup"/>
@@ -226,7 +226,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_okhttp"/>
@@ -258,7 +258,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_okio"/>
@@ -290,7 +290,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_roundimageview"/>
@@ -322,7 +322,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryBlue500"
+                android:textColor="@color/Black500"
                 android:textSize="@dimen/typography_subhead"
                 android:textStyle="bold"
                 android:text="@string/license_title_rxjava"/>
