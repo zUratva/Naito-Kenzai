@@ -1,3 +1,11 @@
+/*
+Last Updated : 13 Jan 2019
+
+Changes: Sdkversion 28 compatibility updates
+    1. Updated deprecated class "ActionBarActivity"
+        to "AppCompatActivity"
+*/
+
 package com.aizoban.naitokenzai.views.fragments;
 
 import android.content.Context;

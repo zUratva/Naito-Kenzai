@@ -1,3 +1,13 @@
+/*
+Last Updated : 13 Jan 2019
+
+Changes:
+    A. Sdkversion 28 compatibility updates
+        1. Updated deprecated class "ActionBarActivity"
+            to "AppCompatActivity"
+    B. Removed google play store link from Settings menu
+*/
+
 package com.aizoban.naitokenzai.views.fragments;
 
 import android.content.Context;
@@ -25,7 +35,8 @@ public class SettingsFragment extends PreferenceFragment implements SettingsView
 
         addPreferencesFromResource(R.xml.preferences);
 
-        findPreference(getString(R.string.preference_view_google_play_key)).setOnPreferenceClickListener(this);
+        // Commented on 13 Jan 2019 to removed google play-store link from "Settings" menu
+        //findPreference(getString(R.string.preference_view_google_play_key)).setOnPreferenceClickListener(this);
         findPreference(getString(R.string.preference_view_disclaimer_key)).setOnPreferenceClickListener(this);
         findPreference(getString(R.string.preference_clear_favourite_key)).setOnPreferenceClickListener(this);
         findPreference(getString(R.string.preference_clear_recent_key)).setOnPreferenceClickListener(this);
