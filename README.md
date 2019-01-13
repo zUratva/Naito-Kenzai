@@ -1,1 +1,1 @@
-# A fork of[Aizoban](https://github.com/IAmJordanX/Aizoban)
+# A fork of [Aizoban](https://github.com/IAmJordanX/Aizoban)
