@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
     public void initializeToolbar() {
         if (mToolbar != null) {
             mToolbar.setTitle(R.string.app_name);
-            mToolbar.setBackgroundColor(getResources().getColor(R.color.primaryBlue500));
+            mToolbar.setBackgroundColor(getResources().getColor(R.color.Black500));
 
             setSupportActionBar(mToolbar);
         }

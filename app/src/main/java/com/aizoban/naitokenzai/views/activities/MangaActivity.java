@@ -227,7 +227,7 @@ public class MangaActivity extends AppCompatActivity implements MangaView, Manga
     public void initializeToolbar() {
         if (mToolbar != null) {
             mToolbar.setTitle(R.string.fragment_manga);
-            mToolbar.setBackgroundColor(getResources().getColor(R.color.primaryBlue500));
+            mToolbar.setBackgroundColor(getResources().getColor(R.color.Black500));
 
             setSupportActionBar(mToolbar);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -474,7 +474,7 @@ public class MangaActivity extends AppCompatActivity implements MangaView, Manga
 
                             mHeaderImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
-                            int color = PaletteUtils.getColorWithDefault(resource.getPalette(), getResources().getColor(R.color.primaryBlue500));
+                            int color = PaletteUtils.getColorWithDefault(resource.getPalette(), getResources().getColor(R.color.Black500));
 
                             applyColorOverlay(color);
                         }

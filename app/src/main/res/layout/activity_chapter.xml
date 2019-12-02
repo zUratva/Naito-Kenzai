@@ -20,7 +20,7 @@
         android:layout_margin="@dimen/baseline_content_unit"
         android:layout_gravity="bottom|left"
         android:src="@drawable/ic_chevron_left_white_24dp"
-        fab:fab_colorNormal="@color/primaryBlue500"
+        fab:fab_colorNormal="@color/Black500"
         fab:fab_colorPressed="@color/accentPinkA200"
         android:id="@+id/previousButton" />
 
@@ -30,7 +30,7 @@
         android:layout_margin="@dimen/baseline_content_unit"
         android:layout_gravity="bottom|right"
         android:src="@drawable/ic_chevron_right_white_24dp"
-        fab:fab_colorNormal="@color/primaryBlue500"
+        fab:fab_colorNormal="@color/Black500"
         fab:fab_colorPressed="@color/accentPinkA200"
         android:id="@+id/nextButton" />
 

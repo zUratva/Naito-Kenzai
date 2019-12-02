@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/baseline_component_unit"
-        android:textColor="@color/primaryBlue500"
+        android:textColor="@color/Black500"
         android:textSize="@dimen/typography_title"
         android:textStyle="bold"
         android:text="@string/dialog_chapter_help" />

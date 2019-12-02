@@ -3,8 +3,8 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/primaryBlue500</item>
-        <item name="colorPrimaryDark">@color/primaryBlue700</item>
+        <item name="colorPrimary">@color/Black500</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/accentPinkA200</item>
 
         <item name="searchViewStyle">@style/SearchViewStyle</item>
